@@ -18,4 +18,4 @@ The main files in this repository are:
  4. Setup a jenkins in standalone mode with all the necessary plugins for Docker and GIT as well credential managed for dokerhub.
  5. Created a pipleline in Jenkins using Jenkinsfile from GIT that uses Dockefile for building image, push the built image to docker repository and runs the container into the  local system.
  6.  Webhook has been setup in git repository but automatic trigger of pipeline job is not feasible since Jenkins server is not hosted publicly i.e github cant recognize jenkins server to trigger the build as of now.
- 7.  Additionally python image in dockerhub will be functional only after mongodB is reachbale priavtely.
+ 7.  Additionally python image in dockerhub will be functional only after mongodB is reachable priavtely.
