@@ -1,7 +1,7 @@
 FROM python:3-alpine AS base
 WORKDIR /service
 COPY requirements.txt .
-RUN pip install -r requirements.txt \
+RUN pip install -r requirements.txt && \
     apk add python-flask
 COPY . ./
 EXPOSE 4030
