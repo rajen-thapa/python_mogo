@@ -7,6 +7,5 @@ EXPOSE 4030
 
 FROM python:3-alpine
 WORKDIR /
-COPY --from=base /service/app.py .
-EXPOSE 4030
+COPY --from=base /service/app.py
 ENTRYPOINT ["python3", "app.py"]
