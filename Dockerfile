@@ -6,7 +6,7 @@ COPY . ./
 EXPOSE 4030
 
 FROM python:3-alpine
-COPY --from=builder /root/.local /root/.local
+COPY --from=base /root/.local /root/.local
 WORKDIR /service
 COPY --from=base /service/ ./
 ENV PATH=/root/.local:$PATH
