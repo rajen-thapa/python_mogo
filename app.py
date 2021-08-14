@@ -12,7 +12,7 @@ client = pymongo.MongoClient('mongodb://192.168.136.130:27017/Production',
 mydb = client["Production"]
 information = mydb["jiten"]
 record = [{"name": "Krishna", "age": 27},{"name": "Shanti", "age": 51}]
-information.insert_many(record)
+information.update(record,{upsert:true})
 print(client.list_database_names())
 
 
