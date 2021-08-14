@@ -11,7 +11,7 @@ client = pymongo.MongoClient('mongodb://192.168.136.130:27017/Production',
                             password='Irg@370ahmz')
 mydb = client["Production"]
 information = mydb["jiten"]
-record = [{"name": "Krishna", "age": 27},{"name": "Shanti", "age": 51},{upsert:true}]
+record = [{"name": "Krishna", "age": 27},{"name": "Shanti", "age": 51},{upsert: true}]
 information.update(record)
 print(client.list_database_names())
 
